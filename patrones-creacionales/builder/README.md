@@ -37,11 +37,3 @@ Es un patrón de diseño creacional que nos permite construir objetos complejos 
 ### Contras
 
 - La complejidad general del código aumenta, ya que el patrón exige la creación de varias clases nuevas.
-
-## Relaciones con otros patrones
-
-- Muchos diseños empiezan utilizando el Factory Method (menos complicado y más personalizable mediante las subclases) y evolucionan hacia Abstract Factory, Prototype, o Builder (más flexibles, pero más complicados). 
-- Builder se enfoca en construir objetos complejos, paso a paso. Abstract Factory se especializa en crear familias de objetos relacionados. Abstract Factory devuelve el producto inmediatamente, mientras que Builder te permite ejecutar algunos pasos adicionales de construcción antes de extraer el producto. 
-- Puedes utilizar Builder al crear árboles Composite complejos porque puedes programar sus pasos de construcción para que funcionen de forma recursiva. 
-- Puedes combinar Builder con Bridge: la clase directora juega el papel de la abstracción, mientras que diferentes constructoras actúan como implementaciones. 
-- Los patrones Abstract Factory, Builder y Prototype pueden todos ellos implementarse como Singletons.
